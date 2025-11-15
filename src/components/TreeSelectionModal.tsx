@@ -22,7 +22,7 @@ const treeTypes: TreeType[] = [
     emoji: '🌲',
     description: '강원도 산불 피해 지역',
     location: '강원도',
-햣     requiredSeeds: 10000,
+    requiredSeeds: 10000,
   },
   {
     id: 'oak',
