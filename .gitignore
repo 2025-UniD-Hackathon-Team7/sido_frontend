@@ -1,5 +1,7 @@
-node_modules
-/src/node_modules
+node_modules/
+dist/
+build/
+.idea/
 .env
 .env.local
 .env.development.local
