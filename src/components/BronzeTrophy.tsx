@@ -1,0 +1,16 @@
+import svgPaths from '../imports/svg-b9lvd25v72';
+
+export function BronzeTrophy() {
+  return (
+    <div className="w-6 h-6">
+      <svg className="w-full h-full" fill="none" viewBox="0 0 24 24">
+        <path d={svgPaths.pce34100} stroke="#CD7F32" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.99984" />
+        <path d={svgPaths.p5fab80} stroke="#CD7F32" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.99984" />
+        <path d={svgPaths.p110ee200} stroke="#CD7F32" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.99984" />
+        <path d="M3.99969 21.9983H19.9984" stroke="#CD7F32" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.99984" />
+        <path d={svgPaths.p1c14f700} stroke="#CD7F32" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.99984" />
+        <path d={svgPaths.p3ad8d700} stroke="#CD7F32" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.99984" />
+      </svg>
+    </div>
+  );
+}
