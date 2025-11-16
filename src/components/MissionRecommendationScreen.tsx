@@ -3,7 +3,7 @@ import { ArrowLeft, Sun, Sunset, Moon, ChevronRight } from 'lucide-react';
 import { Button } from './ui/button';
 import { SurveyData } from './MissionSurveyScreen';
 import { getRecommendedMissions } from '../utils/supabase/client';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import AfternoonIcon from '../imports/Icon-66-406';
 
 interface Mission {
@@ -255,13 +255,21 @@ export function MissionRecommendationScreen({
                 </div>
 
                 {/* Rewards */}
-                <div className="flex items-center gap-1">
-                  <div className="bg-[#FFF8E1] rounded-full px-2 py-0.5">
-                    <span className="text-[#F57C00] text-xs font-medium">+{mission.reward} 🌱</span>
+                {/* Rewards */}
+                {/* Rewards */}
+                {/* flex-shrink-0 추가: 공간이 좁아져도 이 블록이 줄어들지 않도록 강제 */}
+                <div className="flex items-center gap-1 flex-shrink-0">
+                  <div className="bg-[#FFF8E1] rounded-full px-1.5 py-0.5">
+                    {/* whitespace-nowrap 추가: 텍스트가 길어도 줄바꿈 방지 */}
+                    <span className="text-[#F57C00] text-[6px] font-medium whitespace-nowrap">
+                      +{mission.reward}🌱
+                    </span>
                   </div>
                   {mission.xp && (
-                      <div className="bg-[#F3E5F5] rounded-full px-2 py-0.5">
-                        <span className="text-[#7B1FA2] text-xs font-medium">+{mission.xp} XP</span>
+                      <div className="bg-[#F3E5F5] rounded-full px-1.5 py-0.5">
+                      <span className="text-[#7B1FA2] text-[6px] font-medium whitespace-nowrap">
+                        +{mission.xp}XP
+                      </span>
                       </div>
                   )}
                 </div>
