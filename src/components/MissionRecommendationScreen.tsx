@@ -256,13 +256,13 @@ export function MissionRecommendationScreen({
 
                 {/* Rewards */}
                 <div className="flex items-center gap-2">
-                  <div className="bg-[#FFF8E1] rounded-full px-3 py-1.5">
-                    <span className="text-[#F57C00] text-sm font-semibold">+{mission.reward} 🌱</span>
+                  <div className="bg-[#FFF8E1] rounded-full px-2.5 py-1">
+                    <span className="text-[#F57C00] text-xs font-medium">+{mission.reward} 🌱</span>
                   </div>
                   {mission.xp && (
-                    <div className="bg-[#F3E5F5] rounded-full px-3 py-1.5">
-                      <span className="text-[#7B1FA2] text-sm font-semibold">+{mission.xp} XP</span>
-                    </div>
+                      <div className="bg-[#F3E5F5] rounded-full px-2.5 py-1">
+                        <span className="text-[#7B1FA2] text-xs font-medium">+{mission.xp} XP</span>
+                      </div>
                   )}
                 </div>
               </div>
