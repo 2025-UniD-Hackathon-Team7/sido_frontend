@@ -2,9 +2,27 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import * as path from 'path';
+import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+      react(),
+      VitePWA({
+        registerType: 'autoUpdate',
+        includeAssets: [],
+        manifest: {
+          name: "SIDO",
+          short_name: "SIDO",
+          theme_color: "#ffffff",
+          icons: [
+            {
+              src: "logo3.png",
+              type: "image/png"
+            },
+          ]
+        }
+      })
+    ],
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
