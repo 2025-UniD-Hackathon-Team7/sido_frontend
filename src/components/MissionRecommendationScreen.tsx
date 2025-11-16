@@ -261,13 +261,13 @@ export function MissionRecommendationScreen({
                 <div className="flex items-center gap-1 flex-shrink-0">
                   <div className="bg-[#FFF8E1] rounded-full px-1.5 py-0.5">
                     {/* whitespace-nowrap 추가: 텍스트가 길어도 줄바꿈 방지 */}
-                    <span className="text-[#F57C00] text-[6px] font-medium whitespace-nowrap">
+                    <span className="text-[#F57C00] text-[5px] font-thin whitespace-nowrap">
                       +{mission.reward}🌱
                     </span>
                   </div>
                   {mission.xp && (
                       <div className="bg-[#F3E5F5] rounded-full px-1.5 py-0.5">
-                      <span className="text-[#7B1FA2] text-[6px] font-medium whitespace-nowrap">
+                      <span className="text-[#7B1FA2] text-[5px] font-thin whitespace-nowrap">
                         +{mission.xp}XP
                       </span>
                       </div>
